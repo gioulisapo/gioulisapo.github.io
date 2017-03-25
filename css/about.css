@@ -1,115 +1,115 @@
-ul
-{
+ul {
     list-style: none;
 }
-.content-box *
-{
+
+.content-box * {
     padding-left: 0px;
     padding-right: 0px;
     margin-right: 0px;
     margin-left: 0px;
 }
 
-.course-list
-{
+.course-list {
     text-align: center;
     height: inherit;
     display: block;
 }
-#year
-{
+
+#year {
     font-weight: 500;
     display: inline;
 }
-#skills, .course-list
-{
+
+#skills,
+.course-list {
     font-size: 20px;
     /*height: inherit;*/
     background-color: #e0e0e0;
     /*display: block;
     height: inherit;*/
 }
-#mark-info-glyph:hover
-{
+
+#mark-info-glyph:hover {
     cursor: pointer;
 }
-#mark-info
-{
+
+#mark-info {
     float: right;
     margin-left: 5px;
     display: none;
 }
 
-#mark-info-glyph:hover #mark-info
-{
-    display: block; 
+#mark-info-glyph:hover #mark-info {
+    display: block;
 }
 
-.filler-courses
-{
-    float: right;
-    /*margin-top: -28px;*/
-    width: 623px; 
-}
-#expand-button
-{
+#expand-button {
     float: right;
     position: relative;
     top: -17px;
 }
-#expand-button:hover
-{
+
+#expand-button_2 {
+    position: relative;
+    top: 7.5px;
+    left: 2.5px;
+}
+
+#expand-button:hover,
+#expand-button_2:hover {
     cursor: pointer;
 }
 
-hr
-{
+hr {
     margin-bottom: -15px;
     margin-right: 20px;
     margin-left: -13px;
-
 }
 
-#expanded
-{
-    display:none;
+#expanded {
+    display: none;
 }
 
-#skills, #skills-anchor
-{
+#expanded_1 {
+    display: none;
+}
+
+#skills,
+#skills-anchor {
     width: inherit;
     display: inline-block;
 }
-#skill-text
-{
+
+#skill-text {
     font-size: 20px;
     display: inline;
     margin-left: 15px;
 }
-.skill
-{
+
+.skill {
     display: block;
 }
-.skill:hover
-{
+
+.skill:hover {
     background-color: #fafafa;
 }
-.skill:hover .wrapper
-{
+
+.skill:hover .wrapper {
     transform: scale(1.05);
 }
-.wrapper
-{
+
+.wrapper {
     transition: all .1s ease-in-out;
     margin-right: 15px;
     float: right;
 }
-h1
-{
+
+h1 {
     margin-top: 40px;
 }
 
-.one-third-logo
+
+/*.one-third-logo
 {
 
 }
@@ -125,4 +125,4 @@ h1
     {
         padding-top: 10px; 
     }
-}
+}*/
