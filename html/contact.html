@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel=stylesheet href=../css/index.css>
+        <link rel="stylesheet" href="../css/contact.css"
+    </head>
+    <script type="text/javascript">
+        $(document).ready(function($){
+			$(".container").mousemove(function(e){
+				var mouseX = e.pageX - $('.container').offset().left;
+				var mouseY = e.pageY - $('.container').offset().top;
+				var totalX = $('.homer').width();
+				var totalY = $('.homer').height();
+				var centerX = totalX / 10;
+				var centerY = totalY / 10;
+				var shiftX = centerX - mouseX;
+				var shiftY = centerY - mouseY;
+				var startX = ($('.homer').width() / 2) - 130;
+				var startY = ($('.homer').height() / 2) +30;
+				$('#eyes').css({ 'left': startX - (shiftX/80) + 'px', 'top': startY - (shiftY/80) + 'px' });
+			});
+		});	
+    </script>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav main-menu">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html#AboutMe">Who I am</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#skills=">Skill</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#"> Information Security</a></li>
+                    <li> <a href="#"> The Books</a></li>
+                    <li> <a href="#"> Interesting Facts </a></li>
+                    <li> <a href="html/contact.html"> Contact Me</a></li>
+                    <li><p id="cheat">hello000000ooooooo</p><img id="logo" src="../files/logo-4.png"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container content">
+        <div class="contact-me-container row">
+            <div class="col-sm-4">
+                <img class="homer" src="../files/homer.png">
+                <img id="eyes" src="../files/eyes.png">
+            </div>
+            <div class="row contact-info col-sm-8">
+                <ul class="list-unstyled">
+                    <li>
+                        <label for="e-mail">EMAIL</label>
+                        <p id="e-mail">
+                            <script TYPE="text/javascript">
+                                // protected email script by Joe Maller
+                                // JavaScripts available at http://www.joemaller.com
+                                // this script is free to use and distribute
+                                // but please credit me and/or link to my site
+
+                                emailE=('gioulisapo@' + 'gmail.com')
+                                document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+                            </script>
+                            <NOSCRIPT>
+                                <em>Email address protected by JavaScript.<BR>
+                                Please enable JavaScript to contact me.</em>
+                            </NOSCRIPT>
+                        </p>
+                    </li>
+                    <li>
+                        <label for="e-mail">PGP KEY</label>
+                        <p id="e-mail">Current ID: 2AEA0F50, available <a href="../files/gioulisapo_pub.asc" target="_blank">localy</a>,</p>
+                        <p>or from the <a href="https://pgp.mit.edu/pks/lookup?op=vindex&search=0x05543B9D2AEA0F50" target="_blank">MIT PGP Key Server</a></p>
+                    </li>
+                    <li>
+                        <label for="social-networks">SOCIAL</label>
+                        <ul class="social-networks">
+                            <li>
+                                <a target="_blank" href="https://gr.linkedin.com/in/gioulisapostolos"><img class="social-buttons" src="../files/linkedin-c.png"</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/gioulisapo"><img class="social-buttons" src="../files/facebook-c.png"</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/GioulisG"><img class="social-buttons" src="../files/twitter-c.png"</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://github.com/gioulisapo/"><img class="social-buttons" src="../files/github-c.png"</a>
+                            </li>
+                        </ul>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </div
+</html>

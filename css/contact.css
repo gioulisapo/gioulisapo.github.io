@@ -1,0 +1,92 @@
+.contact-me-container
+{
+    background-image: url('../files/envelope-plain.jpg');
+    background-size: contain;
+    height: 523px;
+    width: inherit;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    -moz-box-shadow: 3px 3px 3px #ccc;
+    -webkit-box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+}
+.contact-info
+{
+    float: right;
+    position: relative;
+    background-color: rgba(238,238,238,0.6);
+    width: 35%;
+    text-align: left;
+    /*display:inline-block*/
+    padding: 15px 0 0 -15px;
+    margin: 12% 70px 0 0;
+    height: 301px;
+    
+}
+
+.homer
+{
+    float: left;
+    position: relative;
+    top: 42px;
+    left: 42%;
+}
+#eyes
+{
+    float: left;
+    position: relative;
+    top: 86px;
+    right: 20px;
+    /*left: 4px;*/
+}
+
+.contact-info label, .contact-info legend
+{
+    color: #f44336;
+    font-weight: bold;
+}
+
+.social-networks
+{
+    padding: 0;
+}
+
+.social-networks li
+{
+    margin: 0;
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+.social-buttons
+{
+    width: 56px;
+    height: 56px;
+    transition: all .2s ease-in-out;
+}
+
+.social-buttons:hover
+{
+    transform: scale(1.05);
+}
+
+/*.text
+{
+    position:relative;
+    font-size: 11px;
+    visibility: hidden;
+    top: -5px;
+    left: 12px;
+    color: #424242;
+    transition: all .2s ease-in-out;
+}
+
+.social-networks li:hover .text
+{
+    visibility: visible;
+}*/
+label
+{
+    font-weight: bold;
+}

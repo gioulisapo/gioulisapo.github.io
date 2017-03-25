@@ -1,0 +1,128 @@
+ul
+{
+    list-style: none;
+}
+.content-box *
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.course-list
+{
+    text-align: center;
+    height: inherit;
+    display: block;
+}
+#year
+{
+    font-weight: 500;
+    display: inline;
+}
+#skills, .course-list
+{
+    font-size: 20px;
+    /*height: inherit;*/
+    background-color: #e0e0e0;
+    /*display: block;
+    height: inherit;*/
+}
+#mark-info-glyph:hover
+{
+    cursor: pointer;
+}
+#mark-info
+{
+    float: right;
+    margin-left: 5px;
+    display: none;
+}
+
+#mark-info-glyph:hover #mark-info
+{
+    display: block; 
+}
+
+.filler-courses
+{
+    float: right;
+    /*margin-top: -28px;*/
+    width: 623px; 
+}
+#expand-button
+{
+    float: right;
+    position: relative;
+    top: -17px;
+}
+#expand-button:hover
+{
+    cursor: pointer;
+}
+
+hr
+{
+    margin-bottom: -15px;
+    margin-right: 20px;
+    margin-left: -13px;
+
+}
+
+#expanded
+{
+    display:none;
+}
+
+#skills, #skills-anchor
+{
+    width: inherit;
+    display: inline-block;
+}
+#skill-text
+{
+    font-size: 20px;
+    display: inline;
+    margin-left: 15px;
+}
+.skill
+{
+    display: block;
+}
+.skill:hover
+{
+    background-color: #fafafa;
+}
+.skill:hover .wrapper
+{
+    transform: scale(1.05);
+}
+.wrapper
+{
+    transition: all .1s ease-in-out;
+    margin-right: 15px;
+    float: right;
+}
+h1
+{
+    margin-top: 40px;
+}
+
+.one-third-logo
+{
+
+}
+
+@media (max-width: 930px)
+{
+    .one-third-logo
+    {
+        height:inherit;
+        width:100%
+    }
+    .course-list
+    {
+        padding-top: 10px; 
+    }
+}
