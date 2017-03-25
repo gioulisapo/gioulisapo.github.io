@@ -1,31 +1,36 @@
 <!doctype html>
 <html lang=en>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link rel=stylesheet href=../css/index.css>
-        <link rel="stylesheet" href="../css/contact.css"
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--css-->
+    <link href='../css/lato_font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel=stylesheet href=../css/index.css>
+    <link rel="stylesheet" href="../css/contact.css" </head>
+    <!--scripts-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function($){
-			$(".container").mousemove(function(e){
-				var mouseX = e.pageX - $('.container').offset().left;
-				var mouseY = e.pageY - $('.container').offset().top;
-				var totalX = $('.homer').width();
-				var totalY = $('.homer').height();
-				var centerX = totalX / 10;
-				var centerY = totalY / 10;
-				var shiftX = centerX - mouseX;
-				var shiftY = centerY - mouseY;
-				var startX = ($('.homer').width() / 2) - 130;
-				var startY = ($('.homer').height() / 2) +30;
-				$('#eyes').css({ 'left': startX - (shiftX/80) + 'px', 'top': startY - (shiftY/80) + 'px' });
-			});
-		});	
+        $(document).ready(function($) {
+            $(".container").mousemove(function(e) {
+                var mouseX = e.pageX - $('.container').offset().left;
+                var mouseY = e.pageY - $('.container').offset().top;
+                var totalX = $('.homer').width();
+                var totalY = $('.homer').height();
+                var centerX = totalX / 10;
+                var centerY = totalY / 10;
+                var shiftX = centerX - mouseX;
+                var shiftY = centerY - mouseY;
+                var startX = ($('.homer').width() / 2) - 130;
+                var startY = ($('.homer').height() / 2) + 30;
+                $('#eyes').css({
+                    'left': startX - (shiftX / 80) + 'px',
+                    'top': startY - (shiftY / 80) + 'px'
+                });
+            });
+        });
     </script>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -50,7 +55,8 @@
                     <li> <a href="#"> The Books</a></li>
                     <li> <a href="#"> Interesting Facts </a></li>
                     <li> <a href="html/contact.html"> Contact Me</a></li>
-                    <li><p id="cheat">hello000000ooooooo</p><img id="logo" src="../files/logo-4.png"></li>
+                    <li>
+                        <p id="cheat">hello000000ooooooo</p><img id="logo" src="../files/logo-4.png"></li>
                 </ul>
             </div>
         </div>
@@ -72,7 +78,7 @@
                                 // this script is free to use and distribute
                                 // but please credit me and/or link to my site
 
-                                emailE=('gioulisapo@' + 'gmail.com')
+                                emailE = ('gioulisapo@' + 'gmail.com')
                                 document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
                             </script>
                             <NOSCRIPT>
@@ -90,21 +96,20 @@
                         <label for="social-networks">SOCIAL</label>
                         <ul class="social-networks">
                             <li>
-                                <a target="_blank" href="https://gr.linkedin.com/in/gioulisapostolos"><img class="social-buttons" src="../files/linkedin-c.png"</a>
+                                <a target="_blank" href="https://gr.linkedin.com/in/gioulisapostolos"><img class="social-buttons" src="../files/linkedin-c.png" </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.facebook.com/gioulisapo"><img class="social-buttons" src="../files/facebook-c.png"</a>
+                                <a target="_blank" href="https://www.facebook.com/gioulisapo"><img class="social-buttons" src="../files/facebook-c.png" </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://twitter.com/GioulisG"><img class="social-buttons" src="../files/twitter-c.png"</a>
+                                <a target="_blank" href="https://twitter.com/GioulisG"><img class="social-buttons" src="../files/twitter-c.png" </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://github.com/gioulisapo/"><img class="social-buttons" src="../files/github-c.png"</a>
+                                <a target="_blank" href="https://github.com/gioulisapo/"><img class="social-buttons" src="../files/github-c.png" </a>
                             </li>
                         </ul>
-                    </li> 
+                    </li>
                 </ul>
             </div>
         </div>
-    </div
-</html>
+    </div </html>
