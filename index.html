@@ -30,195 +30,251 @@
         });
     </script>
 </head>
-<div class="container content">
-    <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid row">
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav main-menu col-sm-12">
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">About <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#AboutMe">Who I am</a></li>
-                                    <li><a href="#Work_Experience">Work Experience</a></li>
-                                    <li><a href="#Education">Education</a></li>
-                                    <li><a href="#Skills_Header">Skill</a></li>
-                                </ul>
-                            </li>
-                            <li class="disabled"> <a href="#"> Information Security</a></li>
-                            <li class="disabled"><a href="#"> The Books</a></li>
-                            <li class="disabled"> <a href="#"> Interesting Facts </a></li>
-                            <li> <a href="html/contact.html"> Contact</a></li>
-                            <li class="col-sm-offset-1 pull-right">
-                                <a style="margin: 0; padding: 0px;" href="http://gioulisapo.me"><img id="logo" src="image/logo.png"></a>
-                            </li>
-                        </ul>
+
+<body>
+    <div class="container content">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid row">
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav main-menu col-sm-12">
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">About <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="scroll" href="#AboutMe">Who I am</a></li>
+                                        <li><a class="scroll" href="#Work_Experience">Work Experience</a></li>
+                                        <li><a class="scroll" href="#Education">Education</a></li>
+                                        <li><a class="scroll" href="#Skills_Header">Skills</a></li>
+                                    </ul>
+                                </li>
+                                <li class="disabled"> <a href="#"> Information Security</a></li>
+                                <li class="disabled"><a href="#"> The Books</a></li>
+                                <li class="disabled"> <a href="#"> Interesting Facts </a></li>
+                                <li> <a href="html/contact.html"> Contact</a></li>
+                                <li class="col-sm-offset-1 pull-right">
+                                    <a style="margin: 0; padding: 0px;" href="http://gioulisapo.me"><img id="logo" src="image/logo.png"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-            <div class="col-sm-12">
-                <div class="row">
-                    <h1 id="AboutMe">About the Site</h1>
-                    <div class="content-box-medium" id="about">
-                        <p style="display: inline;">
-                            This website is intended as more interactive form of a CV. Eventualy I am planning of using it as a secuity blog as well as a place to share personal thoughts and opinions. Enough about the website though, lets talk about me.<br><br>                            I am a
-                            <div style="display:inline;" id="age"></div> year old, Greek person, currently living in the United Kingdom. I studied Computer Science at the University of Athens and went on to continued my studies in London, by doing an MSc on Information Security at Royal Holloway.
-                            I am currently employeed as an intern at Cisco, as part of the Year in Industry Porgram of my MSc degree. I have completed my exams and I am only due half my disretation, titled "Utilizing the block chain in e-voting applications",
-                            and due on September 2017<span id="expand-button_2" style="display: inline" class="glyphicon glyphicon-option-horizontal"></span>
-                            <div id="expanded_1"><br>Some random facts about me: I am highly uncomfortable of uncovered laptop cameras and . Other interests of mine include programming, gimping things, history, diving and pretending I will go to the gym the next day.
-                                <br><br> As far as information security is concearned I am more of a practical kind of guy, as it is evident from my CV. However, I do enjoy understanding how crypto works, as long as the math is not too hard and I would
-                                definately like to expand my knowledge on the GRC side of things.<br><br> In an nuttshel I would say that I am the kind of guy that would write a javascript snippet to fill out ones age in order to avoid updating ones website
-                                every year; so if
-                                <a data-toggle="tooltip" title="I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it. #Obviously, I am not lazy but the scripting part is true.">Bill Gates</a> is to be trusted I
-                                am the right man for the job, any job, that is.
+                </nav>
+                <div class="col-sm-12">
+                    <div class="text-container">
+                        <div class="row">
+                            <h1 id="AboutMe">About the Site</h1>
+                            <div class="content-box-medium" id="about">
+                                <p style="display: inline;">
+                                    This website is intended as more interactive form of a CV (<a href="files/CV.pdf" target="_blank">here</a>, for CV.pdf). Eventualy I am planning of using it as a secuity blog as well as a place to share personal thoughts
+                                    and opinions. Enough about the website though, lets talk me.<br><br> I am a
+                                    <div style="display:inline;" id="age"></div> year old, Greek person, currently living in the United Kingdom. I studied Computer Science at the University of Athens and went on to continued my studies in London, by doing an MSc on Information Security at
+                                    Royal Holloway. I am currently employeed as an intern at Cisco, as part of the Year in Industry Porgram of my MSc degree. I have completed my exams and I am only due half my disretation, titled "Utilizing the block
+                                    chain in e-voting applications", and due on September 2017<span id="expand-button_2" style="display: inline" class="glyphicon glyphicon-option-horizontal"></span>
+                                    <div id="expanded_1"><br>Some random facts about me: I am highly uncomfortable of uncovered laptop cameras and . Other interests of mine include programming, gimping things, history, diving and pretending I will go to the gym the next day.
+                                        <br><br> As far as information security is concearned I am more of a practical kind of guy, as it is evident from my CV. However, I do enjoy understanding how crypto works, as long as the math is not too hard and
+                                        I would definately like to expand my knowledge on the GRC side of things.<br><br> In an nuttshel I would say that I am the kind of guy that would write a javascript snippet to fill out ones age in order to avoid
+                                        updating ones website every year; so if
+                                        <a data-toggle="tooltip" title="I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it. #Obviously, I am not lazy but the scripting part is true.">Bill Gates</a> is to be trusted
+                                        I am the right man for the job, any job, that is.
+                                    </div>
+                                    <script>
+                                        var currentTime = new Date();
+                                        var year = currentTime.getFullYear();
+                                        document.getElementById('age').innerHTML = year - 1991;
+                                    </script>
+                                </p>
+                                </p>
                             </div>
-                            <script>
-                                var currentTime = new Date();
-                                var year = currentTime.getFullYear();
-                                document.getElementById('age').innerHTML = year - 1991;
-                            </script>
-                        </p>
-                        </p>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 id="Work_Experience">Work Experience</h1>
-                        <div class="content-box">
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <!--<div class="col-sm-12">-->
+                            <h1 id="Work_Experience">Work Experience</h1>
+                            <div class="content-box">
+                                <h3>
+                                    <div id="year"> 2016 - Present</div> | Intern Security Consultant | Cisco Systems, Inc.</strong>
+                                </h3>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="image/portcullis-cisco.png" class=" img-responsive">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p style="margin-left: 10px;">
+                                            My duties as an intern at Cisco included multiple responsibilities, spanning from preparing reports for customers and performing tests on client products, to managing administrative tasks and developing software. During my internship, my technical skills
+                                            hugely benefited. I tested multiple Web Applications and Android Applications and also performed External Infrastructure Assessments and had a chance to work with and learn from some of the leading pentesters
+                                            in the in
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <h1 id="Education">Education</h1>
+                            <div class="content-box">
+                                <h3>
+                                    <div id="year">2015-2017</div> | Msc in Information Security with year in Industry | ...</h3>
+                                <img src="image/rhul-logo.jpg" class=" img-responsive col-sm-4 one-third-logo">
+                                <div class="courses col-sm-8">
+                                    <div class="row course-list">
+                                        <ul class="col-sm-6 list-unstyled">
+                                            <li>Security Testing </li>
+                                            <li>Computer Security</li>
+                                            <li>Security Management</li>
+                                        </ul>
+                                        <ul class="col-sm-6 list-unstyled">
+                                            <li>Digital Forensics</li>
+                                            <li>Network Security</li>
+                                            <li>Cryptography</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row content-box">
                             <h3>
-                                <div id="year"> 2016 - Present</div> | Intern Security Consultant | Cisco Systems, Inc.</strong>
-                            </h3>
-                            <div class="col-sm-4">
-                                <img src="image/portcullis-cisco.png" class=" img-responsive one-third-logo">
-                            </div>
-                            <div class="col-sm-8">
-                                My duties as an intern at Cisco included multiple responsibilities, spanning from preparing reports for customers and performing tests on client products, to managing administrative tasks and developing software. During my internship, my technical skills
-                                hugely benefited. I tested multiple Web Applications and Android Applications and also performed External Infrastructure Assessments and had a chance to work with and learn from some of the leading pentesters in the in
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <h1 id="Education">Education</h1>
-                    <div class="content-box">
-                        <h3>
-                            <div id="year">2015-2017</div> | Msc in Information Security with year in Industry | ...</h3>
-                        <img src="image/rhul-logo.jpg" class=" img-responsive col-sm-4 one-third-logo">
-                        <div class="courses col-sm-8">
-                            <div class="row course-list">
-                                <ul class="col-sm-6 list-unstyled">
-                                    <li>Security Testing </li>
-                                    <li>Computer Security</li>
-                                    <li>Security Management</li>
-                                </ul>
-                                <ul class="col-sm-6 list-unstyled">
-                                    <li>Digital Forensics</li>
-                                    <li>Network Security</li>
-                                    <li>Cryptography</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row content-box">
-                    <h3>
-                        <div id="year">2009-2015</div> | BSc in Informatics and Telecommunications | 7.06 <small><span class="glyphicon glyphicon-info-sign" id="mark-info-glyph"><div id="mark-info">UK 2:1, ECTS B</div></span></small></h3>
-                    <img src="image/uoa-logo.png" class="img-responsive col-sm-4 one-third-logo">
-                    <div class="courses col-sm-8">
-                        <div class="row course-list">
-                            <ul class="col-sm-6 list-unstyled">
-                                <li>Data Structures</li>
-                                <li>Operating Systems</li>
-                                <li>OOP, C++</li>
-                            </ul>
-                            <ul class="col-sm-6 list-unstyled">
-                                <li>Computer Architecture I & II</li>
-                                <li>Communication Networks I & II</li>
-                                <li>Database Management</li>
-                            </ul>
-                        </div>
-                        <span id="expand-button" class="glyphicon glyphicon-collapse-down"></span>
-                        <div id="expanded">
-                            <div class="row course-list">
-                                <ul class="col-sm-6 list-unstyled">
-                                    <li>Discrete Mathematics</li>
-                                    <li>Numerical Analysis</li>
-                                    <li>Linear Algebra</li>
-                                </ul>
-                                <ul class="col-sm-6 list-unstyled">
-                                    <li>Maths for Computer Science</li>
-                                    <li>Algorithms and Complexity</li>
-                                    <li>Optical Comm. and Networks</li>
-                                </ul>
+                                <div id="year">2009-2015</div> | BSc in Informatics and Telecommunications | 7.06 <small><span class="glyphicon glyphicon-info-sign" id="mark-info-glyph"><div id="mark-info">UK 2:1, ECTS B</div></span></small></h3>
+                            <img src="image/uoa-logo.png" class="img-responsive col-sm-4 one-third-logo">
+                            <div class="courses col-sm-8">
+                                <div class="row course-list">
+                                    <ul class="col-sm-6 list-unstyled">
+                                        <li>Data Structures</li>
+                                        <li>Operating Systems</li>
+                                        <li>OOP, C++</li>
+                                    </ul>
+                                    <ul class="col-sm-6 list-unstyled">
+                                        <li>Computer Architecture I & II</li>
+                                        <li>Communication Networks I & II</li>
+                                        <li>Database Management</li>
+                                    </ul>
+                                </div>
+                                <span id="expand-button" class="glyphicon glyphicon-collapse-down"></span>
+                                <div id="expanded">
+                                    <div class="row course-list">
+                                        <ul class="col-sm-6 list-unstyled">
+                                            <li>Discrete Mathematics</li>
+                                            <li>Numerical Analysis</li>
+                                            <li>Linear Algebra</li>
+                                        </ul>
+                                        <ul class="col-sm-6 list-unstyled">
+                                            <li>Maths for Computer Science</li>
+                                            <li>Algorithms and Complexity</li>
+                                            <li>Optical Comm. and Networks</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="row content-box">
-                    <h1 id="Skills_Header">Skills</h1>
-                    <div id="skills">
-                        <div class="row-sm-1">
-                            <div class="skill">
-                                <p id="skill-text">Web Apllication Testing</p>
-                                <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
+                        <hr>
+                        <div class="row content-box">
+                            <h1 id="Skills_Header">Skills</h1>
+                            <div id="skills" class="col-sm-12">
+                                <div class="skill row">
+                                    <p id="skill-text">Web Application Testing</p>
+                                    <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
+                                </div>
+                                <div class="skill">
+                                    <p id="skill-text">Android App Testing</p>
+                                    <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3" readonly/></div>
+                                </div>
+                                <div class="skill">
+                                    <p id="skill-text">Infrastructure Testing</p>
+                                    <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="2" readonly/></div>
+                                </div>
                             </div>
-                            <div class="skill">
-                                <p id="skill-text">Android Apllication Testing</p>
-                                <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3" readonly/></div>
+                            <br><br>
+                            <div id="skills" class="col-sm-12" style="margin-top: 10px;">
+                                <div class="col-sm-4">
+                                    <div class="skill">
+                                        <p id="skill-text">Burp-suite</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.8" readonly/></div>
+                                    </div>
+                                    <div class="skill">
+                                        <p id="skill-text">drozer</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="skill">
+                                        <p id="skill-text">Nessus</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
+                                    </div>
+                                    <div class="skill">
+                                        <p id="skill-text">metasploit</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.2" readonly/></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="skill">
+                                        <p id="skill-text">nmap</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
+                                    </div>
+                                    <div class="skill">
+                                        <p id="skill-text">hydra</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3" readonly/></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="skill">
-                                <p id="skill-text">Infrastructure Testing</p>
-                                <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="2" readonly/></div>
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-                    <div id="skills">
-                        <div class="col-sm-4">
-                            <div class="skill">
-                                <p id="skill-text">Burp-suite</p>
-                                <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.8" readonly/></div>
-                            </div>
-                            <div class="skill">
-                                <p id="skill-text">drozer</p>
-                                <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.7" readonly/></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="skill">
-                                <p id="skill-text">Nessus</p>
-                                <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
-                            </div>
-                            <div class="skill">
-                                <p id="skill-text">metasploit</p>
-                                <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.2" readonly/></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="skill">
-                                <p id="skill-text">nmap</p>
-                                <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
-                            </div>
-                            <div class="skill">
-                                <p id="skill-text">hydra</p>
-                                <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3" readonly/></div>
+                            <div id="skills" class="col-sm-12" style="margin-top: 10px;">
+                                <div class="col-sm-4">
+                                    <div class="skill">
+                                        <p id="skill-text">C</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
+                                    </div>
+                                    <div class="skill">
+                                        <p id="skill-text">Python</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="4" readonly/></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="skill">
+                                        <p id="skill-text">C++</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="2.5" readonly/></div>
+                                    </div>
+                                    <div class="skill">
+                                        <p id="skill-text">PHP</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="4.5" readonly/></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="skill">
+                                        <p id="skill-text">Java</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3" readonly/></div>
+                                    </div>
+                                    <div class="skill">
+                                        <p id="skill-text">Bash</p>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-sm-1"></div>
         </div>
-        <div class="col-sm-1"></div>
     </div>
+</body>
 
 </html>
 <script>
     $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
+    });
+    $(".scroll").click(function(event) {
+        event.preventDefault();
+        //calculate destination place
+        var dest = 0;
+        if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+            dest = $(document).height() - $(window).height();
+        } else {
+            dest = $(this.hash).offset().top;
+        }
+        //go to destination
+        $('html,body').animate({
+            scrollTop: dest
+        }, 500, 'swing');
     });
 </script>

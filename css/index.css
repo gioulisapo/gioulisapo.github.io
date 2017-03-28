@@ -51,3 +51,7 @@ a:visited {
 .content a {
     text-decoration: none;
 }
+
+.text-container {
+    padding: 0 10px 0 10px;
+}

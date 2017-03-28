@@ -74,20 +74,10 @@ hr {
     display: none;
 }
 
-#skills,
-#skills-anchor {
-    width: inherit;
-    display: inline-block;
-}
-
 #skill-text {
     font-size: 20px;
     display: inline;
     margin-left: 15px;
-}
-
-.skill {
-    display: block;
 }
 
 .skill:hover {
@@ -107,22 +97,3 @@ hr {
 h1 {
     margin-top: 40px;
 }
-
-
-/*.one-third-logo
-{
-
-}
-
-@media (max-width: 930px)
-{
-    .one-third-logo
-    {
-        height:inherit;
-        width:100%
-    }
-    .course-list
-    {
-        padding-top: 10px; 
-    }
-}*/
