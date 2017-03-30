@@ -54,8 +54,7 @@ ul {
 
 #expand-button_2 {
     position: relative;
-    top: 7.5px;
-    left: 2.5px;
+    left: 3.5px;
 }
 
 #expand-button:hover,
@@ -70,16 +69,13 @@ hr {
     margin-left: -13px;
 }
 
-#expanded {
-    display: none;
-}
-
-#expanded_1 {
+#expanded,
+#expanded_1,
+#expanded_2 {
     display: none;
 }
 
 #expanded_2 {
-    display: none;
     margin-top: -8px;
 }
 
