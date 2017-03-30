@@ -23,10 +23,13 @@ ul {
 #skills,
 .course-list {
     font-size: 20px;
-    /*height: inherit;*/
     background-color: #e0e0e0;
-    /*display: block;
-    height: inherit;*/
+}
+
+.course-list-text {
+    font-size: 15px;
+    padding: 0.8% 1.5%;
+    background-color: #e0e0e0;
 }
 
 #mark-info-glyph:hover {
@@ -56,7 +59,8 @@ ul {
 }
 
 #expand-button:hover,
-#expand-button_2:hover {
+#expand-button_2:hover,
+#expand-button_3:hover {
     cursor: pointer;
 }
 
@@ -72,6 +76,11 @@ hr {
 
 #expanded_1 {
     display: none;
+}
+
+#expanded_2 {
+    display: none;
+    margin-top: -8px;
 }
 
 #skill-text {

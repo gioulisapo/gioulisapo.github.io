@@ -22,11 +22,28 @@
         $(function() {
             $('#expand-button').click(function() {
                 $('#expanded').slideToggle();
+                if (document.querySelector('#expand-button').className == "glyphicon glyphicon-collapse-down")
+                    document.getElementById("expand-button").className = "glyphicon glyphicon-collapse-up";
+                else
+                    document.getElementById("expand-button").className = "glyphicon glyphicon-collapse-down";
             });
         });
         $(function() {
             $('#expand-button_2').click(function() {
                 $('#expanded_1').slideToggle();
+                if (document.querySelector('#expand-button_2').className == "glyphicon glyphicon-collapse-down")
+                    document.getElementById("expand-button_2").className = "glyphicon glyphicon-collapse-up";
+                else
+                    document.getElementById("expand-button_2").className = "glyphicon glyphicon-collapse-down";
+            });
+        });
+        $(function() {
+            $('#expand-button_3').click(function() {
+                $('#expanded_2').slideToggle();
+                if (document.querySelector('#expand-button_3').className == "glyphicon glyphicon-collapse-down")
+                    document.getElementById("expand-button_3").className = "glyphicon glyphicon-collapse-up";
+                else
+                    document.getElementById("expand-button_3").className = "glyphicon glyphicon-collapse-down";
             });
         });
     </script>
@@ -42,7 +59,7 @@
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav main-menu col-sm-12">
                                 <li class="dropdown">
-                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">About <b class="caret"></b></a>
+                                    <a href="/index.html" data-toggle="dropdown" class="dropdown-toggle">About <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="scroll" href="#AboutMe">Who I am</a></li>
                                         <li><a class="scroll" href="#Work_Experience">Work Experience</a></li>
@@ -55,7 +72,7 @@
                                 <li class="disabled"> <a href="#"> Interesting Facts </a></li>
                                 <li> <a href="html/contact.html"> Contact</a></li>
                                 <li class="col-sm-offset-1 pull-right">
-                                    <a style="margin: 0; padding: 0px;" href="http://gioulisapo.me"><img id="logo" src="image/logo.png"></a>
+                                    <a style="margin: 0; padding: 0px;" href="index.html"><img id="logo" src="image/logo.png"></a>
                                 </li>
                             </ul>
                         </div>
@@ -71,7 +88,7 @@
                                     and opinions. Enough about the website though, lets talk me.<br><br> I am a
                                     <div style="display:inline;" id="age"></div> year old, Greek person, currently living in the United Kingdom. I studied Computer Science at the University of Athens and went on to continued my studies in London, by doing an MSc on Information Security at
                                     Royal Holloway. I am currently employeed as an intern at Cisco, as part of the Year in Industry Porgram of my MSc degree. I have completed my exams and I am only due half my disretation, titled "Utilizing the block
-                                    chain in e-voting applications", and due on September 2017<span id="expand-button_2" style="display: inline" class="glyphicon glyphicon-option-horizontal"></span>
+                                    chain in e-voting applications", and due on September 2017<span id="expand-button_2" style="display: inline" class="glyphicon glyphicon-collapse-down"></span>
                                     <div id="expanded_1"><br>Some random facts about me: I am highly uncomfortable of uncovered laptop cameras and . Other interests of mine include programming, gimping things, history, diving and pretending I will go to the gym the next day.
                                         <br><br> As far as information security is concearned I am more of a practical kind of guy, as it is evident from my CV. However, I do enjoy understanding how crypto works, as long as the math is not too hard and
                                         I would definately like to expand my knowledge on the GRC side of things.<br><br> In an nuttshel I would say that I am the kind of guy that would write a javascript snippet to fill out ones age in order to avoid
@@ -90,25 +107,24 @@
                         </div>
                         <hr>
                         <div class="row">
-                            <!--<div class="col-sm-12">-->
-                            <h1 id="Work_Experience">Work Experience</h1>
+                            <h1 id="Education">Work Experience</h1>
                             <div class="content-box">
                                 <h3>
-                                    <div id="year"> 2016 - Present</div> | Intern Security Consultant | Cisco Systems, Inc.</strong>
+                                    <div id="year">2016 - Present</div> | Intern Security Consultant | Cisco Systems, Inc
                                 </h3>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <img src="image/portcullis-cisco.png" class=" img-responsive">
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <p style="margin-left: 10px;">
-                                            My duties as an intern at Cisco included multiple responsibilities, spanning from preparing reports for customers and performing tests on client products, to managing administrative tasks and developing software. During my internship, my technical skills
-                                            hugely benefited. I tested multiple Web Applications and Android Applications and also performed External Infrastructure Assessments and had a chance to work with and learn from some of the leading pentesters
-                                            in the in
+                                <img src="image/portcullis-cisco.png" class=" img-responsive col-sm-4 one-third-logo">
+                                <div class="courses col-sm-8">
+                                    <div class="row course-list-text">
+                                        <p>
+                                            My duties as an intern at Cisco included multiple responsibilities, spanning from preparing reports for customers and performing tests on client products, to managing administrative tasks and developing software.During my internship,
+
+                                            <span id="expand-button_3" class="glyphicon glyphicon-collapse-down"></span>
+                                            <div id="expanded_2"> my technical skills hugely benefited.I tested multiple Web Applications and Android Applications and also performed External Infrastructure Assessments and had a chance to work with and learn from some of the
+                                                leading penentration testers in the field.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
-                                <!--</div>-->
                             </div>
                         </div>
                         <hr>
@@ -130,6 +146,22 @@
                                             <li>Network Security</li>
                                             <li>Cryptography</li>
                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="content-box">
+                                <h3>
+                                    <div id="year">2016</div> | Information Security Management System Consultant based on ISO/IEC 27001:2013 .
+                                </h3>
+                                <img src="image/iso-27001-logo.gif" class=" img-responsive col-sm-4 one-third-logo">
+                                <div class="courses col-sm-8">
+                                    <div class="row course-list-text">
+                                        <p>
+                                            This intense full time one week course given by one of Korea's leading Security Auditors and consultants, <a href="https://www.linkedin.com/in/taewanpark/" target="_blank">Taewan Park</a>, gave us an idepth
+                                            look on how security concultants operate and should operate under the ISO 27001 guidelines.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
