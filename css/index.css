@@ -4,6 +4,10 @@
     /* IE9 Compat Modes */
 }
 
+body {
+    margin-bottom: 25px;
+}
+
 a {
     color: #3f51b5;
     text-decoration: none;
