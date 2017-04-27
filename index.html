@@ -46,6 +46,28 @@
                     document.getElementById("expand-button_3").className = "glyphicon glyphicon-collapse-down";
             });
         });
+        // Get the modal
+        window.onload = function() {
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('gif_expandable');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        }
     </script>
 </head>
 
@@ -113,7 +135,7 @@
                                 <h3>
                                     <div id="year">2016 - Present</div> | Intern Security Consultant | Cisco Systems, Inc
                                 </h3>
-                                <img src="image/portcullis-cisco.png" class=" img-responsive col-sm-4 one-third-logo">
+                                <img src="image/portcullis-cisco.png" class=" img-responsive col-sm-4">
                                 <div class="courses col-sm-8">
                                     <div class="row course-list-text">
                                         <p>
@@ -135,7 +157,7 @@
                             <div class="content-box">
                                 <h3>
                                     <div id="year">2015-2017</div> | Msc in Information Security with year in Industry | ...</h3>
-                                <img src="image/rhul-logo.jpg" class=" img-responsive col-sm-4 one-third-logo">
+                                <img src="image/rhul-logo.jpg" class=" img-responsive col-sm-4">
                                 <div class="courses col-sm-8">
                                     <div class="row course-list">
                                         <ul class="col-sm-6 list-unstyled">
@@ -157,7 +179,7 @@
                                 <h3>
                                     <div id="year">2016</div> | Information Security Management System Consultant based on ISO/IEC 27001:2013 .
                                 </h3>
-                                <img src="image/iso-27001-logo.gif" class=" img-responsive col-sm-4 one-third-logo">
+                                <img src="image/iso-27001-logo.gif" class=" img-responsive col-sm-4">
                                 <div class="courses col-sm-8">
                                     <div class="row course-list-text">
                                         <p>
@@ -170,7 +192,7 @@
                         <div class="row content-box">
                             <h3>
                                 <div id="year">2009-2015</div> | BSc in Informatics and Telecommunications | 7.06 <small><span class="glyphicon glyphicon-info-sign" id="mark-info-glyph"><div id="mark-info">UK 2:1, ECTS B</div></span></small></h3>
-                            <img src="image/uoa-logo.png" class="img-responsive col-sm-4 one-third-logo">
+                            <img src="image/uoa-logo.png" class="img-responsive col-sm-4">
                             <div class="courses col-sm-8">
                                 <div class="row course-list">
                                     <ul class="col-sm-6 list-unstyled">
@@ -207,19 +229,19 @@
                             <div id="skills" class="col-sm-12">
                                 <div class="skill row">
                                     <p id="skill-text">Web Application Testing</p>
-                                    <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
+                                    <!--<div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>-->
                                 </div>
                                 <div class="skill">
                                     <p id="skill-text">Android App Testing</p>
-                                    <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.2" readonly/></div>
+                                    <!--<div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.2" readonly/></div>-->
                                 </div>
                                 <div class="skill">
                                     <p id="skill-text">Ext. Infrastructure Testing</p>
-                                    <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3" readonly/></div>
+                                    <!--<div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3" readonly/></div>-->
                                 </div>
                                 <div class="skill">
                                     <p id="skill-text">Int. Infrastructure Testing</p>
-                                    <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="2.5" readonly/></div>
+                                    <!--<div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="2.5" readonly/></div>-->
                                 </div>
                             </div>
                             <!--<div id="skills" class="col-sm-12" style="margin-top: 10px;">
@@ -272,7 +294,7 @@
                                     </div>
                                     <div class="skill">
                                         <p id="skill-text">PHP</p>
-                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="4.5" readonly/></div>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3" readonly/></div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
@@ -282,16 +304,48 @@
                                     </div>
                                     <div class="skill">
                                         <p id="skill-text">Bash</p>
-                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="3.5" readonly/></div>
+                                        <div class="wrapper"><input type="hidden" class="rating" data-fractions="2" value="4" readonly/></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr>
+                        <div id="myModal" class="modal col-sm-8">
+                            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
                         <div class="row content-box">
                             <h1 id="Skills_Header">Snips and Snippets</h1>
                             During the years I have written various scripts and small programs to either make my job easier or to enterain myself. Here is a condenced list of some them.
+                            <div class="content-box">
+                                <h3>prepare_apk.sh</h3>
+                                <img src="files/apk_prepare_sample_run.gif" class="img-responsive col-sm-4" id="gif_expandable">
+                                <div class="courses col-sm-8">
+                                    <div class="row course-list-text">
+                                        <p>
+                                            A bash script that decompiles the apk, producing both the source in Java and the smali. The files are aranged neatly in a simple folder structure. The script also attempts to install the application on the device. The boring stuff are over! Happy hacking.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!--<div id="myModal" class="modal col-sm-8">
+                            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <div class="row content-box">
+                            <h3>prepare_apk.sh</h3>
+                            <img src="files/apk_prepare_sample_run.gif" class="img-responsive col-sm-4" id="gif_expandable">
+                            <div class="courses col-sm-8">
+                                <div class="row course-list-text">
+                                    <p>
+                                        A bash script that decompiles the apk, producing both the source in Java and the smali. The files are aranged neatly in a simple folder structure. The script also attempts to install the application on the device. The boring stuff are over! Happy hacking.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
