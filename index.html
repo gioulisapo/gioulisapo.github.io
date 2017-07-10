@@ -17,58 +17,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-rating.js"></script>
-
-    <script>
-        $(function() {
-            $('#expand-button').click(function() {
-                $('#expanded').slideToggle();
-                if (document.querySelector('#expand-button').className == "glyphicon glyphicon-collapse-down")
-                    document.getElementById("expand-button").className = "glyphicon glyphicon-collapse-up";
-                else
-                    document.getElementById("expand-button").className = "glyphicon glyphicon-collapse-down";
-            });
-        });
-        $(function() {
-            $('#expand-button_2').click(function() {
-                $('#expanded_1').slideToggle();
-                if (document.querySelector('#expand-button_2').className == "glyphicon glyphicon-collapse-down")
-                    document.getElementById("expand-button_2").className = "glyphicon glyphicon-collapse-up";
-                else
-                    document.getElementById("expand-button_2").className = "glyphicon glyphicon-collapse-down";
-            });
-        });
-        $(function() {
-            $('#expand-button_3').click(function() {
-                $('#expanded_2').slideToggle();
-                if (document.querySelector('#expand-button_3').className == "glyphicon glyphicon-collapse-down")
-                    document.getElementById("expand-button_3").className = "glyphicon glyphicon-collapse-up";
-                else
-                    document.getElementById("expand-button_3").className = "glyphicon glyphicon-collapse-down";
-            });
-        });
-        // Get the modal
-        window.onload = function() {
-            var modal = document.getElementById('myModal');
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById('gif_expandable');
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -143,7 +92,7 @@
                                             benefited from the work I did during my internship.
 
                                             <span id="expand-button_3" class="glyphicon glyphicon-collapse-down"></span>
-                                            <div id="expanded_2"> I tested multiple Web Applications and Android Applications, performed External Infrastructure Assessments, as well as had a chance to work with and learn from some of the leading penentration testers in the
+                                            <div id="expanded_2"> I tested multiple Web Applications and Android Applications, performed External Infrastructure Assessments, as well as had a chance to work with and learn from some of the leading penetration testers in the
                                                 field.
                                             </div>
                                         </p>
@@ -310,17 +259,17 @@
                             </div>
                         </div>
                         <hr>
-                        <div id="myModal" class="modal col-sm-8">
-                            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                        <div id="myModal_1" class="modal col-sm-8">
+                            <span class="close_1" onclick="document.getElementById('myModal_1').style.display='none'">&times;</span>
                             <img class="modal-content" id="img01">
-                            <div id="caption"></div>
+                            <div id="caption_1"></div>
                         </div>
                         <div class="row content-box">
                             <h1 id="Skills_Header">Snips and Snippets</h1>
                             During the years I have written various scripts and small programs to either make my job easier or to enterain myself. Here is a condenced list of some them.
                             <div class="content-box">
                                 <h3>prepare_apk.sh</h3>
-                                <img src="files/apk_prepare_sample_run.gif" class="img-responsive col-sm-4" id="gif_expandable">
+                                <img src="files/apk_prepare_sample_run.gif" class="img-responsive col-sm-4" id="gif_expandable_1">
                                 <div class="courses col-sm-8">
                                     <div class="row course-list-text">
                                         <p>
@@ -330,14 +279,14 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div id="myModal" class="modal col-sm-8">
-                            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
+                        <div id="myModal_2" class="modal col-sm-8">
+                            <span class="close_2" onclick="document.getElementById('myModal_2').style.display='none'">&times;</span>
+                            <img class="modal-content" id="img02">
+                            <div id="caption_2"></div>
                         </div>
                         <div class="row content-box">
                             <h3>prepare_apk.sh</h3>
-                            <img src="files/apk_prepare_sample_run.gif" class="img-responsive col-sm-4" id="gif_expandable">
+                            <img src="files/apk_prepare_sample_run.gif" class="img-responsive col-sm-4" id="gif_expandable_2">
                             <div class="courses col-sm-8">
                                 <div class="row course-list-text">
                                     <p>
@@ -345,7 +294,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>-->
+                        </div>
                     </div>
                 </div>
             </div>

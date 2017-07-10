@@ -60,20 +60,21 @@ a:visited {
     padding: 0 20px 0 20px;
 }
 
-#gif_expandable {
+#gif_expandable_1,
+#gif_expandable_2 {
     height: 82px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#gif_expandable:hover {
+#gif_expandable_1:hover, #gif_expandable_2:hover {
     opacity: 0.7;
 }
 
 
 /* The Modal (background) */
 
-.modal {
+.modal_1, .modal_2 {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -152,7 +153,7 @@ a:visited {
 
 /* The Close Button */
 
-.close {
+.close_1, .close_2 {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -162,8 +163,10 @@ a:visited {
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.close_1:hover,
+.close_1:focus,
+.close_2:hover,
+.close_2:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
