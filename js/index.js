@@ -25,34 +25,6 @@ $(function() {
             document.getElementById("expand-button_3").className = "glyphicon glyphicon-collapse-down";
     });
 });
-// Get the modal
-window.onload = function() {
-    var modal = document.getElementById('myModal_1');
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('gif_expandable_1');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption_1");
-    img.onclick = function() {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-}
-$(document).keyup(function(e) {
-    var modal = document.getElementById('myModal_1');
-    if (e.keyCode == 27) { // escape key maps to keycode `27`
-        modal.style.display = "none";
-    }
-});
 
 // Get the modal
 window.onload = function() {
@@ -92,8 +64,10 @@ window.onload = function() {
     }
 }
 $(document).keyup(function(e) {
-    var modal = document.getElementById('myModal_2');
+    var modal_1 = document.getElementById('myModal_1');
+    var modal_2 = document.getElementById('myModal_2');
     if (e.keyCode == 27) { // escape key maps to keycode `27`
-        modal.style.display = "none";
+        modal_1.style.display = "none";
+        modal_2.style.display = "none";
     }
 });
