@@ -62,7 +62,7 @@ a:visited {
 
 /* The Modal (background) */
 
-.modal_1, .modal_2 {
+#myModal_1, #myModal_2 {
     display: none;
     /* Hidden by default */
     position: fixed;
