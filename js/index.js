@@ -25,6 +25,15 @@ $(function() {
             document.getElementById("expand-button_3").className = "glyphicon glyphicon-collapse-down";
     });
 });
+$(function() {
+    $('#expand-button_4').click(function() {
+        $('#expanded_3').slideToggle();
+        if (document.querySelector('#expand-button_4').className == "glyphicon glyphicon-collapse-down")
+            document.getElementById("expand-button_4").className = "glyphicon glyphicon-collapse-up";
+        else
+            document.getElementById("expand-button_4").className = "glyphicon glyphicon-collapse-down";
+    });
+});
 
 // Get the modal
 window.onload = function() {
