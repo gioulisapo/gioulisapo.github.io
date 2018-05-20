@@ -57,7 +57,7 @@
                                 <p style="display: inline;">
                                     This website is intended as a more interactive form of CV (<a href="files/CV_UK.pdf" target="_blank">here</a>, for CV.pdf). I am eventually planning to use it as a secuity blog, as well as a place to share personal thoughts
                                     and opinions. Enough about the website though, let's talk about me.<br><br> I am a
-                                    <div style="display:inline;" id="age"></div> year old, currently serving my, 9 month, mandatory military service as an informatics and research private at the Greek Army. I studied Computer Science at the University of Athens and went on to continue my studies in London, completing the Information Security  MSc at
+                                    <div style="display:inline;" id="age"></div> year old, currently serving my, 9 month, mandatory military service as an informatics and research private at the Greek Army (<div id="kaishmera"></div>). I studied Computer Science at the University of Athens and went on to continue my studies in London, completing the Information Security  MSc at
                                     Royal Holloway with distinction. Most recently I was an intern intern security consultant at Cisco (former Portcullis), as part of the Year in Industry Porgram of my MSc degree. 
                                     <span id="expand-button_2" style="display: inline" class="glyphicon glyphicon-collapse-down"></span>
                                     <div id="expanded_1"><br>Some random facts about me: I am highly uncomfortable with uncovered laptop cameras. Other interests of mine include programming, gimping things, history, diving and pretending I will go to the gym the next day.
@@ -84,6 +84,27 @@
                                     <div id="year">August 2016 - July 2017</div>    |    Intern Security Consultant | Cisco Systems, Inc
                                 </h3>
                                 <img src="image/portcullis-cisco.png" class=" img-responsive col-sm-4">
+                                <div class="courses col-sm-8">
+                                    <div class="row course-list-text">
+                                        <p>
+                                            My duties as an intern at Cisco included multiple responsibilities, spanning from preparing reports for customers and performing tests on client products to managing administrative tasks and developing software. I believe that my technical skills hugely
+                                            benefited from the work I did during my internship.
+
+                                            <span id="expand-button_3" class="glyphicon glyphicon-collapse-down"></span>
+                                            <div id="expanded_2"> I tested multiple Web Applications and Android Applications, performed External Infrastructure Assessments, as well as had a chance to work with and learn from some of the leading penetration testers in the
+                                                field.
+                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="content-box">
+                                <h3>
+                                    <div id="year">January 2018 - Today</div>    |    Research and Informatics private | Greek Armed Forces
+                                </h3>
+                                <img src="image/greek-army.png" class=" img-responsive col-sm-4">
                                 <div class="courses col-sm-8">
                                     <div class="row course-list-text">
                                         <p>
@@ -289,4 +310,9 @@
             scrollTop: dest
         }, 500, 'swing');
     });
+    var countDown = new Date("Oct 15, 2018 12:00:00").getTime();
+    var now = new Date().getTime();
+    var distance = countDown - now;
+    var days = Math.floor(distance / (1000*60*60*24));
+    document.getElementById("kaishmera").innerHTML = days-1 + "D and today";
 </script>

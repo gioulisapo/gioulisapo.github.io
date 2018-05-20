@@ -1,7 +1,10 @@
 ul {
     list-style: none;
 }
-
+#kaishmera
+{
+    display: inline;
+}
 .content-box * {
     padding-left: 0px;
     padding-right: 0px;
